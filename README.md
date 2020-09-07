@@ -70,3 +70,11 @@ plt.ylabel('Fare ($USD)')`
 - The following line plot was generated from the code above: 
 
 ![Image 1](https://github.com/NassimNatA/PyBer_Analysis/blob/master/Analysis/Challenge_Fig1.png)
+
+## Summary
+
+Based on the results above, the following recommendations are made to address disparities amongst the three city types (Urban, Suburban, Rural): 
+
+- Standardize the  fare per ride for each city type to remove differences between the various neighborhoods. 
+- Set the fare per drivers as a fixed value for every ride to remove differences between the various neighborhoods. 
+- Set a yearly minimum value of total fares for each city type to help normalize the fluctations in total fare per month. 
