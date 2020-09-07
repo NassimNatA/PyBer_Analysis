@@ -7,29 +7,31 @@ The purpose of this new analysis is to perform exploratory analysis on large dat
 ### 1. Produce Summary Dataframe
 A summary dataframe was produced by the following code: 
 
-- Get the total rides for each city type
+- The total rides for each city type
 
 `total_rides_city_type = pyber_data_df.groupby(["type"]).count()["ride_id"]
 total_rides_city_type`
 
-- Get the total drivers for each city type
+- The total drivers for each city type
 
 `total_drivers_city_type = city_data_df.groupby(["type"]).sum()["driver_count"]
 total_drivers_city_type`
 
-- Get the total amount of fares for each city type
+- The total amount of fares for each city type
 
 `total_fares_city_type = pyber_data_df.groupby(["type"]).sum()["fare"]
 total_fares_city_type`
 
-- Get the average fare per ride for each city type.  
+- The average fare per ride for each city type.  
 
 `avg_fare_per_ride_city_type = total_fares_city_type / total_rides_city_type
 avg_fare_per_ride_city_type`
 
-- Get the average fare per driver for each city type. 
+- The average fare per driver for each city type. 
 
 `avg_fare_per_driver_city_type = total_fares_city_type / total_drivers_city_type
 avg_fare_per_driver_city_type`
 
 - The following summary dataframe was the output from the code above: 
+
+- These results show that when comparing the ride-sharing data between the different city types, it is evident that urban cities have the highest total fares in comparison to rural cities and suburban cities. It is also evident that the average fair for ride is hghest for rural cities, in comparison to suburban cities and urban cities. Finally, it is also noticebale that the average fare per driver is highest for rural cities in comparisont to suburban cities and urban cities. This readout is consistent with the amount of total rides and the amount of total drivers in each city type, in which the urban cities have the highest value, followed by suburban cities and rural cities. 
